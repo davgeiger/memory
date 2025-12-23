@@ -67,7 +67,7 @@ function revealImage(id) {
   let pointCount = document.getElementById("points");
   let winBanner = document.getElementById("won");
 
-  clickedImage.src = `/img/${pairs[id]}`;
+  clickedImage.src = `img/${pairs[id]}`;
 
   let currentRevealed = pairs[id];
 
