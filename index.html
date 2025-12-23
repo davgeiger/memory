@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="memory.js"></script>
+  </head>
+  <body>
+    <h1>Memory</h1>
+    <div class="config">
+      <label for="cardAmount" class="label">Anzahl Paare:</label>
+      <select name="cardAmount" id="cardAmount">
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <br />
+      <button class="btnCreate" onclick="setUp()">Spielen</button>
+      <div class="points-wrapper">
+        <p>Punkte: <span id="points">0</span></p>
+      </div>
+    </div>
+    <p class="won" id="won"></p>
+    <section id="playingField"></section>
+  </body>
+</html>

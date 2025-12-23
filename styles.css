@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.config {
+  display: flex;
+  flex-direction: column;
+}
+
+.playingField {
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 1rem;
+
+  border: 1px solid black;
+}
+
+.singleCard {
+  width: 200px;
+  height: 200px;
+}
+
+.singleCard:hover {
+  cursor: pointer;
+}
+
+.singleCard .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clicked {
+  pointer-events: none;
+}
+
+.won {
+  color: green;
+  font-size: 3rem;
+}
